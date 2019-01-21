@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilos.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="btn-group d-md-block fixed-top d-none col-2" id="menu134">
+        <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <img src="https://img.icons8.com/color/48/000000/menu.png">
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button" onclick="buscar1()" href="#contenedor">Ejercicio_1</button>
+            <button class="dropdown-item" type="button" onclick="buscar2()" href="#cabecera">Ejercicio_2</button>
+            <button class="dropdown-item" type="button" onclick="buscar3()" href="#espacio3">Ejercicio_3</button>
+            <button class="dropdown-item" type="button" onclick="buscar4()" href="#espacio3">Ejercicio_4</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- START NAV -->
+        <nav class="navbar navbar-dark fixed-top navbar-expand-md bg-dark">
+            <div class="container col-12">
+                <h1 class="navbar-brand" href="index.html">Ejercicios</h1>
+
+                <div class="collapse navbar-collapse d-flex justify-content-center d-sm-none d-none d-md-block" id="navbarNav">
+                    <button class="btn col-2 m-2 d-sm-none d-none d-md-block border-white text-white" type="button"
+                        onclick="buscar1()" href="#contenedor" id="boton1">Ejercicio_1</button>
+                    <button class="btn col-2 m-2 d-sm-none d-none d-md-block border-white text-white" type="button"
+                        onclick="buscar2()" id="boton1">Ejercicio_2</button>
+                    <button class="btn col-2 m-2 d-sm-none d-none d-md-block border-white text-white" type="button"
+                        onclick="buscar3()" href="#espacio3" id="boton1">Ejercicio_3</button>
+                    <button class="btn col-2 m-2 d-sm-none d-none d-md-block border-white text-white" type="button"
+                        onclick="buscar4()" href="#espacio3" id="boton1">Ejercicio_4</button>
+                </div>
+
+                <div class="btn-group fixed-left d-sm-block d-md-none">
+                    <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="https://img.icons8.com/color/48/000000/menu.png">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button" onclick="buscar1()" href="#contenedor">Ejercicio_1</button>
+                        <button class="dropdown-item" type="button" onclick="buscar2()">Ejercicio_2</button>
+                        <button class="dropdown-item" type="button" onclick="buscar3()" href="#espacio3">Ejercicio_3</button>
+                        <button class="dropdown-item" type="button" onclick="buscar4()" href="#espacio3">Ejercicio_4</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAV -->
+
+
+        <hr id="espacio3" class="mb-5">
+
+        <!-- START EJERCICIO_1 -->
+        <div class="card bg-secondary mt-5 p-4 " id="contenedor">
+            <div class="container" id="Ejercicio_1">
+                <div class="card m-3" style="width: 18rem;">
+
+                    <div class="card-header bg-transparent">
+                        <h5>Contacto</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alejandro</h5>
+                        <h6 class="card-text text-muted" id="moneo">Moneo</h6>
+                        <div class="row">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-phone fa-rotate-90"></i></div>
+                            <p>&nbsp 93123123</p>
+                        </div>
+                        <a href="#" class="card-link">Enviar email</a>
+                    </div>
+                </div>
+                <h5>Introduzca sus Datos de Contacto</h5>
+                <hr>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-sm-2 col-form-label">Nombre</label>
+
+                        <div class="col-sm-4 ">
+                            <label class="sr-only" for="nombre1">Introduzca su nombre</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="nombre1" placeholder="Introduzca su nombre">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-sm-2 col-form-label">Apellido</label>
+
+                        <div class="col-sm-4 my-1">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="apellido1" placeholder="su primer apellido">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+
+                        <div class="col-sm-4 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="correo1" placeholder="maresmewebdevelopers@gmail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-12 col-md-2">Telefono</label>
+                        <div class="col-sm-4 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-phone fa-rotate-90"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="telefono1" placeholder="su telefono de contacto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-4 my-1">
+                            <button type="button" class="btn btn-primary btn-lg btn-block " onclick="Registrar1()"><a
+                                    href="#moneo" class="text-white">Enviar</a></button>
+                        </div>
+                    </div>
+                </form>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>APELLIDO</th>
+                            <th>CORREO</th>
+                            <th>TELEFONO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ListaPersona">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- END EJERCICIO_1 -->
+        <hr>
+        <div class="box has-background-grey-light d-none" id="contenedor">
+            <div class="container" id="Ejercicio_1">
+                <div class="card m-3" style="width: 18rem;">
+
+                    <div class="card-header">
+                        <h5>Contacto</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alejandro</h5>
+                        <h6 class="card-text text-muted" id="moneo">Moneo</h6>
+                        <div class="row">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-phone fa-rotate-90"></i></div>
+                            <p>&nbsp 93123123</p>
+                        </div>
+                        <a href="#" class="card-link">Enviar email</a>
+                    </div>
+                </div>
+                <h5>Introduzca sus Datos de Contacto</h5>
+                <hr>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-sm-2 col-form-label">Nombre</label>
+
+                        <div class="col-sm-4 ">
+                            <label class="sr-only" for="nombre1">Introduzca su nombre</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="nombre1" placeholder="Introduzca su nombre">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-sm-2 col-form-label">Apellido</label>
+
+                        <div class="col-sm-4 my-1">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="apellido1" placeholder="su primer apellido">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+
+                        <div class="col-sm-4 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="correo1" placeholder="maresmewebdevelopers@gmail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-12 col-md-2">Telefono</label>
+                        <div class="col-sm-4 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-phone fa-rotate-90"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="telefono1" placeholder="su telefono de contacto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputText" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-4 my-1">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Registrar1()"><a
+                                    href="#moneo" class="text-white">Enviar</a></button>
+                        </div>
+                    </div>
+                </form>
+                <table class="table col-12">
+                    <thead>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>APELLIDO</th>
+                            <th>CORREO</th>
+                            <th>TELEFONO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ListaPersona">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- START EJERCICIO_2 -->
+        <div class="container col-12 col-md-10 m-4" id="Ejercicio_2">
+            <div class="row">
+                <div class="col-12 col-md-8 p-0 p-md-3">
+                    <h1> Products </h1>
+                    <br>
+                    <table class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Create At</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><a href="#">Settlers of Catan</a></td>
+                                <td>2012-03-04 11:07:43 UTC</td>
+                                <td>
+
+                                    <button class="btn">Edit</button>
+                                    &nbsp
+                                    <button class="btn btn-danger">Destroy</button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><a href="#">Agricola</a></td>
+                                <td>2012-03-04 11:07:43 UTC</td>
+                                <td>
+
+                                    <button class="btn ">Edit</button>
+                                    &nbsp
+                                    <button class="btn btn-danger">Destroy</button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><a href="#">7 Wonders</a></td>
+                                <td>2012-03-04 11:07:43 UTC</td>
+                                <td>
+
+                                    <button class="btn ">Edit</button>
+                                    &nbsp
+                                    <button class="btn btn-danger ">Destroy</button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><a href="#">Stone Age</a></td>
+                                <td>2012-03-04 11:07:43 UTC</td>
+                                <td>
+
+                                    <button class="btn">Edit</button>
+                                    &nbsp
+                                    <button class="btn btn-danger ">Destroy</button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><a href="#">Dominion</a></td>
+                                <td>2012-03-04 11:07:43 UTC</td>
+                                <td>
+
+                                    <button class="btn">Edit</button>
+                                    &nbsp
+                                    <button class="btn btn-danger">Destroy</button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td><a href="#">Goban</a></td>
+                                <td>2012-03-04 11:07:43 UTC</td>
+                                <td>
+
+                                    <button class="btn ">Edit</button>
+                                    &nbsp;
+                                    <button class="btn btn-danger ">Destroy</button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="lorem col-12 col-md-4">
+                    <h1>About us</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia
+                        deserunt mollit anim id est laborum.</p>
+                    <br>
+                    <button class="btn btn-primary">New</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- END EJERCICIO_2 -->
+
+        <!-- START EJERCICIO_3 -->
+        <div class="container" id="Ejercicio_3">
+
+            <div class="col-12 col-md-12 col-xl-12 p-2 text-white">
+
+                <h2 id="titulo2">Formulario de Registro</h2>
+                <form>
+                    <div class="form-group row">
+                        <label for="nombre2" class="col-md-6 col-form-label text-right">Nombres</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="nombre2">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="apellido2" class="col-md-6 col-form-label text-right">Apellidos</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="apellido2">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="correo2" class="col-md-6 col-form-label text-right">Correo Electrónico</label>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" id="correo2">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="nacimiento2" class="col-md-6 col-form-label text-right">Fecha de Nacimiento</label>
+                        <div class="col-md-6">
+                            <input type="date" class="form-control" id="nacimiento2">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <legend class="col-form-label col-md-6 pt-0 text-right">Sexo</legend>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" value="Masculino">
+                                <label class="form-check-label" for="gridRadios1">
+                                    Maculino
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" value="Femenino">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Femenino
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telefono2" class="col-md-6 col-form-label text-right">Teléfono</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="telefono2">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="celular2" class="col-md-6 col-form-label text-right">Teléfono Celular</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="celular2">
+                            <br />
+                            <div class="text-left">
+                                <button type="Registrarse" class="btn btn-success" onclick="Registrar2()"><a href="#titulo2"
+                                        class="text-white">Registrarse</a></button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+            <table class="table col-12">
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>CORREO</th>
+                        <th>FEC. NACIMIENTO</th>
+                        <th>SEXO</th>
+                        <th>TELEFONO</th>
+                        <th>CELULAR</th>
+                    </tr>
+                </thead>
+                <tbody id="ListaPersona">
+                </tbody>
+            </table>
+        </div>
+        <!-- END EJERCICIO_3 -->
+
+        <!-- START EJERCICIO_4 -->
+        <div class="container" id="Ejercicio_4">
+            <div class="col-12 col-md-12 d-flex justify-content-center">
+                <div class="card col-md-8 shadow p-3 mb-1 bg-white rounded  ">
+                    <div class="col-12 card-header cabecera4 bg-transparent">Login to site.com
+                        <i class="fas fa-times float-right" style="opacity: 0.5"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="card col-12 col-sm-12 p-3 m-1" style="background-color: #F6F6F6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="usuario4">Username</label>
+                                            <input type="text" class="form-control" id="usuario4" placeholder="Usuario">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password4">Password</label>
+                                            <input type="password" class="form-control" id="password4" placeholder="Password">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember Login</label>
+                                        </div>
+                                        <small class="form-text text-muted">(if this is a private computer)</small>
+                                        <br />
+                                        <div class="form-group">
+                                            <button class="btn btn-success col-12" data-toggle="modal" data-target="#exampleModalCenter"
+                                                onclick="Iniciar()"><a href="#espacio3" class="text-white">Login</a></button><br />
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body" id="contenidomodal">
+                                                                ASLFWHFGPIUREG
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Modal -->
+
+                                            <button class="btn btn-light col-12">Help to login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 p-2">
+                                <h3>Register now for
+                                    <label class="text-success">FREE</label>
+                                </h3>
+                                <div class="row col-12">
+                                    <div><i class="fas fa-check" style="color:green"></i></div>
+                                    <label class="col-10 col-md-10">See all your orders</label>
+                                </div>
+                                <div class="row col-12">
+                                    <div><i class="fas fa-check" style="color:green"></i></div>
+                                    <label class="col-10 col-md-10">Fast re-order</label>
+                                </div>
+                                <div class="row col-12">
+                                    <div><i class="fas fa-check" style="color:green"></i></div>
+                                    <label class="col-10 col-md-10">Save your favorites</label>
+                                </div>
+
+                                <div class="row col-12">
+                                    <div><i class="fas fa-check" style="color:green"></i></div>
+                                    <label class="col-10 col-md-10">Fast check out</label>
+                                </div>
+                                <div class="row col-12">
+                                    <div><i class="fas fa-check" style="color:green"></i></div>
+                                    <label class="col-10 col-md-10">Get a gift
+                                        <small class="text-muted">&nbsp; only new customers</small>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" style="text-decoration:underline">Read more</a>
+                                    <br />
+                                    <br />
+                                    <button class="btn btn-primary col-12 col-md-12">Yes please, register now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END EJERCICIO_4 -->
+
+
+    </div>
+
+
+
+    <!--******************************************************************************************************************************-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+
+        function buscar1() {
+            var texto1 = document.getElementById('Ejercicio_1').innerHTML
+
+            var ctndr = document.getElementById('contenedor');
+            ctndr.innerHTML = texto1
+            return true
+        }
+
+        function buscar2() {
+            var texto1 = document.getElementById('Ejercicio_2').innerHTML
+
+            var ctndr = document.getElementById('contenedor');
+            ctndr.innerHTML = texto1
+            $('#menu134').hide();
+            return true
+        }
+
+        function buscar3() {
+            var texto1 = document.getElementById('Ejercicio_3').innerHTML
+
+            var ctndr = document.getElementById('contenedor');
+            ctndr.innerHTML = texto1
+            return true
+        }
+
+        function buscar4() {
+            var texto1 = document.getElementById('Ejercicio_4').innerHTML
+
+            var ctndr = document.getElementById('contenedor');
+            ctndr.innerHTML = texto1
+            return true
+        }
+
+
+        if (buscar2() || buscar3() || buscar4()) {
+            $('#Ejercicio_2').hide();
+            $('#Ejercicio_3').hide();
+            $('#Ejercicio_4').hide();
+        }
+        if (buscar1() || buscar3() || buscar4()) {
+            $('#menu134').show();
+        }
+
+
+
+        //EJERCICIO_1JS
+
+        class Persona {
+            constructor(nombre, apellido, correo, telefono) {
+                this.nombre = nombre;
+                this.apellido = apellido;
+                this.correo = correo;
+                this.telefono = telefono;
+            }
+        }
+
+        var arrayPersona = [];
+
+        function Registrar1() {
+
+            var nombre = $('#nombre1').val();
+            var apellido = $('#apellido1').val();
+            var correo = $('#correo1').val();
+            var telefono = $('#telefono1').val();
+
+            var persona = new Persona(nombre, apellido, correo, telefono)
+
+            arrayPersona.push(persona)
+
+            var cadena = '';
+            for (const ObjPersona of arrayPersona) {
+                cadena += `
+                <tr>
+                    <td>` + ObjPersona.nombre + `</td>
+                    <td>` + ObjPersona.apellido + `</td>
+                    <td>` + ObjPersona.correo + `</td>
+                    <td>` + ObjPersona.telefono + `</td>
+                </tr>
+                `;
+            }
+            var listaPersona = document.getElementById('ListaPersona');
+            listaPersona.innerHTML = cadena
+        }
+
+        //EJERCICIO_3JS
+
+        class Persona1 {
+            constructor(nombre, apellido, correo, nacimiento, sexo, telefono, celular) {
+                this.nombre = nombre;
+                this.apellido = apellido;
+                this.correo = correo;
+                this.nacimiento = nacimiento;
+                this.sexo = sexo;
+                this.telefono = telefono;
+                this.celular = celular;
+            }
+        }
+
+        var arrayPersona1 = [];
+
+        function Registrar2() {
+
+            var nombre = $('#nombre2').val();
+            var apellido = $('#apellido2').val();
+            var correo = $('#correo2').val();
+            var nacimiento = $('#nacimiento2').val();
+            let sexo = $('input[name="gridRadios"]:checked').val();
+            var telefono = $('#telefono2').val();
+            var celular = $('#celular2').val();
+
+
+            var persona = new Persona1(nombre, apellido, nacimiento, correo, sexo, telefono, celular)
+
+
+            arrayPersona1.push(persona)
+
+            var cadena = '';
+            for (const ObjPersona of arrayPersona1) {
+                cadena += `
+                <tr>
+                    <td>` + ObjPersona.nombre + `</td>
+                    <td>` + ObjPersona.apellido + `</td>
+                    <td>` + ObjPersona.nacimiento + `</td>
+                    <td>` + ObjPersona.correo + `</td>
+                    <td>` + ObjPersona.sexo + `</td>
+                    <td>` + ObjPersona.telefono + `</td>
+                    <td>` + ObjPersona.celular + `</td>
+                </tr>
+                `;
+            }
+            var listaPersona = document.getElementById('ListaPersona');
+            listaPersona.innerHTML = cadena
+        }
+        //EJERCICIO_4JS
+
+        function Iniciar() {
+
+            var username = $('#usuario4').val();
+            var pass = $('#password4').val();
+            var modc = $('#contenidomodal');
+            var contenido = '';
+
+            console.log(modc)
+
+
+            if (username === "usuario" && pass === "1234") {
+                alert( `<p> Bienvenido </p>`);
+            } else if (username != "usuario" && pass === "1234") {
+                contenido = `<p> El usuario es incorrecto </p>`;
+            } else if (username === "usuario" && pass != "1234") {
+                contenido = `<p> El usuario es incorrecto </p>`;
+            } else if (username != "usuario" && pass != "1234") {
+                contenido = `<p> El usuario y contraseña son incorrectos </p>`;
+            }
+
+            modc.innerHTML = contenido
+        }
+    </script>
+</body>
+
+</html>
