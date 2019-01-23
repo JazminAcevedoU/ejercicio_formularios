@@ -38,8 +38,23 @@
     <div class="container">
         <!-- START NAV -->
         <nav class="navbar navbar-dark fixed-top navbar-expand-md bg-dark">
-            <div class="container col-12">
-                <h1 class="navbar-brand" href="index.html">Ejercicios</h1>
+            <div class="container row col-12">
+                <div class="col-3">
+                    <h1 class="navbar-brand" href="index.html">Ejercicios</h1>
+                </div>
+
+                <div class="btn-group float-left d-sm-block d-md-none col-2">
+                    <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                        <img src="https://img.icons8.com/color/20/000000/menu.png">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button" onclick="buscar1()" href="#contenedor">Ejercicio_1</button>
+                        <button class="dropdown-item" type="button" onclick="buscar2()">Ejercicio_2</button>
+                        <button class="dropdown-item" type="button" onclick="buscar3()" href="#espacio3">Ejercicio_3</button>
+                        <button class="dropdown-item" type="button" onclick="buscar4()" href="#espacio3">Ejercicio_4</button>
+                    </div>
+                </div>
 
                 <div class="collapse navbar-collapse d-flex justify-content-center d-sm-none d-none d-md-block" id="navbarNav">
                     <button class="btn col-2 m-2 d-sm-none d-none d-md-block border-white text-white" type="button"
@@ -51,19 +66,6 @@
                     <button class="btn col-2 m-2 d-sm-none d-none d-md-block border-white text-white" type="button"
                         onclick="buscar4()" href="#espacio3" id="boton1">Ejercicio_4</button>
                 </div>
-
-                <div class="btn-group fixed-left d-sm-block d-md-none">
-                    <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <img src="https://img.icons8.com/color/48/000000/menu.png">
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <button class="dropdown-item" type="button" onclick="buscar1()" href="#contenedor">Ejercicio_1</button>
-                        <button class="dropdown-item" type="button" onclick="buscar2()">Ejercicio_2</button>
-                        <button class="dropdown-item" type="button" onclick="buscar3()" href="#espacio3">Ejercicio_3</button>
-                        <button class="dropdown-item" type="button" onclick="buscar4()" href="#espacio3">Ejercicio_4</button>
-                    </div>
-                </div>
             </div>
         </nav>
         <!-- END NAV -->
@@ -74,8 +76,7 @@
         <!-- START EJERCICIO_1 -->
         <div class="card bg-secondary mt-5 p-4 " id="contenedor">
             <div class="container" id="Ejercicio_1">
-                <div class="card m-3" style="width: 18rem;">
-
+                <div class="card m-0 m-sm-3">
                     <div class="card-header bg-transparent">
                         <h5>Contacto</h5>
                     </div>
@@ -501,7 +502,7 @@
                                                             </button>
                                                         </div>
                                                         <div class="modal-body" id="contenidomodal">
-                                                                ASLFWHFGPIUREG
+                                                            ASLFWHFGPIUREG
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary"
@@ -576,7 +577,6 @@
 
 
     <script>
-
         function buscar1() {
             var texto1 = document.getElementById('Ejercicio_1').innerHTML
 
@@ -650,10 +650,13 @@
             for (const ObjPersona of arrayPersona) {
                 cadena += `
                 <tr>
-                    <td>` + ObjPersona.nombre + `</td>
+                    <td>` + ObjPersona.nombre +
+                    `</td>
                     <td>` + ObjPersona.apellido + `</td>
-                    <td>` + ObjPersona.correo + `</td>
-                    <td>` + ObjPersona.telefono + `</td>
+                    <td>` +
+                    ObjPersona.correo + `</td>
+                    <td>` + ObjPersona.telefono +
+                    `</td>
                 </tr>
                 `;
             }
@@ -697,13 +700,18 @@
             for (const ObjPersona of arrayPersona1) {
                 cadena += `
                 <tr>
-                    <td>` + ObjPersona.nombre + `</td>
+                    <td>` + ObjPersona.nombre +
+                    `</td>
                     <td>` + ObjPersona.apellido + `</td>
-                    <td>` + ObjPersona.nacimiento + `</td>
-                    <td>` + ObjPersona.correo + `</td>
+                    <td>` +
+                    ObjPersona.nacimiento + `</td>
+                    <td>` + ObjPersona.correo +
+                    `</td>
                     <td>` + ObjPersona.sexo + `</td>
-                    <td>` + ObjPersona.telefono + `</td>
-                    <td>` + ObjPersona.celular + `</td>
+                    <td>` + ObjPersona.telefono +
+                    `</td>
+                    <td>` + ObjPersona.celular +
+                    `</td>
                 </tr>
                 `;
             }
@@ -723,7 +731,7 @@
 
 
             if (username === "usuario" && pass === "1234") {
-                alert( `<p> Bienvenido </p>`);
+                alert(`<p> Bienvenido </p>`);
             } else if (username != "usuario" && pass === "1234") {
                 contenido = `<p> El usuario es incorrecto </p>`;
             } else if (username === "usuario" && pass != "1234") {
